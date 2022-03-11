@@ -12,11 +12,17 @@ body{
     background-color: rgb(240, 239, 239);
 }
 
+
 .slider-image img{
     width: 83%;
     display: block;
     margin: 20px auto;
 }
+
+.small-slider{
+    border-radius: 5px;
+}
+
 
 .book-fair-image img{
     display: block;
@@ -28,7 +34,7 @@ body{
     height: 400px;
     background-color: white;
     border-radius: 2px;
-    box-shadow: 1px 1px 5px hsl(0, 0%, 53%);
+    box-shadow: 0px 4px 6px -3px rgb(156, 156, 156);
     margin: 20px auto 30px auto;
 }
 
@@ -80,7 +86,6 @@ body{
     margin: 0 auto;
 }
 
-
 .category-button{
     display: flex;
     align-items: center;
@@ -89,10 +94,11 @@ body{
 }
 
 .category-button .bttn{
-    height: 60px;
-    width: 260px;
-    margin: 3px 5px 10px 5px;
-    border: 2px solid #0397D4 ;
+    height: 65px;
+    width: 250px;
+    font-size: 18px;
+    margin: 3px 5px 15px 5px;
+    border: 2px solid #01b3ff ;
     border-radius: 6px;
     background: -webkit-linear-gradient(0deg,transparent 50%,#0397D4 50%);
     background-size: 600px 50px;
@@ -134,21 +140,26 @@ body{
     width: 130px;
 }
 
-.manager-info{
+.view-all-book{
     text-decoration: none;
-    color:dodgerblue ;
-    font-size: 10px;
-    padding: 5px 10px;
-    border: 1px solid dodgerblue;
-    border-radius: 1px;
+    text-align: center;
+    height: 38px;
+    width: 80px;
+    color: rgb(3, 151, 211);
+    font-size: 15px;
+    border: 1px solid rgb(3, 151, 211);
+    box-shadow: 0px 3px 6px -4px rgb(162, 162, 162);
+    border-radius: 2px;
+    padding: 6px 10px;
     position: absolute;
     right: 11%;
 }
 
-.manager-info:hover{
+.view-all-book:hover{
     color:white ;
-    background-color:dodgerblue;
     transition: .4s;
+    background-color: rgb(3, 151, 211);
+    border-color: rgb(139, 196, 234);
 }
 
 .book-name{
@@ -194,7 +205,7 @@ body{
     height: 450px;
     background-color: white;
     border-radius: 2px;
-    box-shadow: 1px 1px 5px rgb(135, 135, 135);
+    box-shadow: 0px 4px 6px -3px rgb(156, 156, 156);
     margin: 20px auto 30px auto;
 }
 
