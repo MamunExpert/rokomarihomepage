@@ -12,11 +12,89 @@ body{
     background-color: rgb(240, 239, 239);
 }
 
+.top-slider{
+    background: rgb(216, 215, 213);
+    height: 65px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.image img{
+    width: 83%;
+    display: block;
+    margin-left: 115px;
+    margin-right: 100px;
+}
+
+.upper-row{
+    display: flex;
+}
+
+    /*   Hearder  */
+
+.upper-container{
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    
+}
+.upper-box{
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 15px 15px 10px 0px;
+}
+
+.upper-row img{
+    width: 110px;
+    height: 40px;
+}
+
+#search-field{
+    height: 42px;
+    width: 600px;
+    outline: none;
+    border: 1px solid rgb(211, 211, 211);
+    border-bottom: 2px solid orange;
+    border-radius: 3px;
+    margin-left: 80px;
+    padding: 5px 15px;
+}
+
+.cart img{
+    width: 40px;
+    height: 35px;
+    margin-right: 10px;
+}
+.upper-row .sign-in{
+    width: 80px;
+    height: 37px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    border: 1px solid rgb(34, 34, 34);
+    border-radius: 7px;
+    padding-left: 13px;
+    padding-top: 5px;
+    transition: 0.3s;
+}
+
+.upper-row .sign-in:hover{
+    background-color: rgb(0, 204, 17);
+    color: white;
+    border: 1px solid rgb(0, 204, 17);
+
+}
 
 .slider-image img{
     width: 83%;
     display: block;
     margin: 20px auto;
+
 }
 
 .small-slider{
