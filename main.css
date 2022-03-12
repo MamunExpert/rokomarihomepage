@@ -64,6 +64,11 @@ body{
     padding: 5px 15px;
 }
 
+#search-field:focus{
+    border: 1px solid #01b3ff ;
+    transition: 0.4s;
+}
+
 .cart img{
     width: 40px;
     height: 35px;
@@ -93,6 +98,7 @@ body{
     width: 83%;
     display: block;
     margin: 20px auto;
+    cursor: pointer;
 }
 
 .small-slider{
@@ -124,10 +130,43 @@ body{
     transition: 0.5s;
 }
 
+
+
+
+
+/*     Book Fair Award Section     */
+
 .book-fair-image img{
     display: block;
     margin: 20px auto;
 }
+
+.award-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-box{
+    height: 400px;
+    width: 300px;
+    padding: 8px 8px;
+    background-color:#004a61;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .cointainer{
     width: 83%;
@@ -194,11 +233,11 @@ body{
 }
 
 .category-button .bttn{
-    height: 65px;
+    height: 60px;
     width: 250px;
     font-size: 18px;
     margin: 3px 5px 15px 5px;
-    border: 2px solid #01b3ff ;
+    border: 1px solid #01b3ff ;
     border-radius: 6px;
     background: -webkit-linear-gradient(0deg,transparent 50%,#0397D4 50%);
     background-size: 600px 50px;
@@ -214,13 +253,13 @@ body{
     margin-right: -22px;
 }
 
-  .category-button .bttn:hover{
+.category-button .bttn:hover{
      background-position: 300px 0;
      color: white;
      cursor: pointer;
 }
 
-.book-box{
+.book-box, .product-box{
     padding: 10px 10px;
     width: 25%;
     height: 300px;
@@ -229,12 +268,16 @@ body{
     position: relative;
 }
 
-.book-box:hover{
+.product-box{
+    height: 350px;
+}
+
+.book-box:hover, .product-box:hover{
     border: 2px solid rgb(200, 200, 200);
     transition: 0.5s;
     cursor: pointer;
 }
-.book-image img{
+.book-image img, .product-image img{
     height: 186px;
     width: 130px;
 }
@@ -264,9 +307,10 @@ body{
 
 
 
+
 /*   Product Hover Overlay  */
 
-.overlay-effect{
+.overlay-effect, .hover-effect{
     position: absolute;
     left: 0;
     top: 0;
@@ -276,13 +320,20 @@ body{
     box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.712);
     display: none;
     transition: all 0.4s;
- }
-
-.floating-effect a, .view-details a{
-    text-decoration: none;
 }
 
-.add-to-cart{
+.floating-effect a, .view-details a, 
+.hover-effect a, .view-details-bttn a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 10px;
+}
+
+.floating-effect a, .hover-effect a{
+    padding: 13px 10px;
+}
+
+.add-to-cart, .add-to-cart-bttn{
     width: 62%;
     font-weight: bold;
     position: absolute;
@@ -290,21 +341,20 @@ body{
     left: 50%;
     transform: translate(-50%, -40%);
     border-radius: 3px;
-    font-size: 12px;
-    padding: 12px 10px;
     color: white;
     background-color: rgb(254, 154, 0);
     box-shadow: 0px 3px 6px -4px rgb(202, 202, 202);
     display: none;
     transition: 0.5s;
 }
-  
-.add-to-cart:hover{
+    
+
+.add-to-cart:hover, .add-to-cart-bttn:hover{
     background-color: rgb(253, 169, 42);
     transition: 0.5s;
 }
 
-.view-button{
+.view-button, .view-bttn{
     width: 100%;
     font-weight: bold;
     color: white;
@@ -319,42 +369,45 @@ body{
     transition: all 0.4s;
 }
 
-.view-button:hover{
+.view-button:hover, .view-bttn:hover{
     background: rgb(54, 170, 247);
 }
 
-.book-box:hover .overlay-effect, .book-box:hover .add-to-cart, .book-box:hover .view-button
+.book-box:hover .overlay-effect, .book-box:hover .add-to-cart, .book-box:hover .view-button,
+.product-box:hover .hover-effect, .product-box:hover .add-to-cart-bttn, .product-box:hover .view-bttn
   {
     display: block;
   }
 
-
-/*   Product Hover Overlay   */
-
+/*   CLose- Product Hover Overlay  */
 
 
 
-.book-name{
+
+/*     Book Product List      */
+
+.book-name, .product-name{
     font-size: 15px;
     font-weight: bold;
 }
 
-.book-author-name{
+.book-author-name, .store-name{
     font-size: 14px;
     color: rgb(105, 105, 105);
+    padding: 5px 0px;
 }
 
-.book-price del{
+.book-price del, .product-price del{
     color: darkgrey;
     font-size: 15px;
 }
 
-.book-price p{
+.book-price p, .product-price p{
     font-size: 15px;
     font-weight: bold;
 }
 
-.book-cointainer{
+.book-cointainer, .rokomari-product{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -366,7 +419,7 @@ body{
     color: rgb(105, 105, 105);
 }
 
-
+/*     Close- Book Product List      */
 
 
 
@@ -374,58 +427,16 @@ body{
 
 .product-cointainer{
     width: 83%;
-    height: 450px;
+    height: 420px;
     background-color: white;
     border-radius: 2px;
     box-shadow: 0px 4px 6px -3px rgb(156, 156, 156);
     margin: 20px auto 30px auto;
 }
 
-.rokomari-product{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-}
-
-.product-box{
-    padding: 10px 10px;
-    width: 25%;
-    height: 350px;
-    text-align: center;
-    border: 2px solid transparent;
-}
-
-.product-box:hover{
-    border: 2px solid rgb(200, 200, 200);
-    opacity: 0.4;
-    transition: 0.5s;
-    cursor: pointer;
-}
-.product-image img{
-    height: 186px;
-    width: 130px;
-}
-
-.product-name{
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.product-author-name{
-    font-size: 14px;
-    color: rgb(105, 105, 105);
-}
-
 .stock-status{
     color: rgb(0, 231, 19);
-}
-.product-price del{
-    color: darkgrey;
-    font-size: 15px;
+    padding: 0px 0px 5px 0px;
 }
 
-.product-price p{
-    font-size: 15px;
-    font-weight: bold;
-}
+/*       Close- Rokomari Products       */

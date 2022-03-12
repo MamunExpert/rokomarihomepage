@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <Style>
+
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: azure;
+        }
+.award-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.award-box{
+    height: 400px;
+    width: 300px;
+    padding: 8px 8px;
+    background-color:rgb(0, 192, 192);  
+    border-radius: 2px;
+    text-align: center;
+    margin: 5px 10px;
+}
+
+.award-box h2{
+    margin: 12px;
+}
+.type-button{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(0, 77, 77);
+    border-top: 2px solid rgb(0, 192, 192);  
+    background-color: rgb(210, 255, 255);  
+}
+
+.right-type-bttn{
+    border-top: none;
+    background-color: rgb(232, 255, 255);  
+}
+
+.selector-bg{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(210, 255, 255); 
+}
+.middle-box{
+    height: 344px;
+    width: 290px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 2px;
+    position: relative;
+}
+
+.fair-button{
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+}
+
+.view-all-book{
+    text-decoration: none;
+    padding: 6px 10px;
+    color: rgb(3, 151, 211);
+    font-size: 15px;
+    border: 1px solid rgb(3, 151, 211);
+    box-shadow: 0px 3px 6px -4px rgb(162, 162, 162);
+    border-radius: 2px;
+}
+
+.view-all-book:hover{
+    color:white ;
+    transition: .4s;
+    background-color: rgb(3, 151, 211);
+    border-color: rgb(139, 196, 234);
+}
+
+#all-in-books{
+    margin: 10px 0px 5px 0px;
+    width: 250px;
+    height: 22px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px;
+    cursor: pointer;
+}
+
+.today-button{
+    text-decoration: none;
+    display: inline-block;
+    margin: 6px 10px 1px 0px;
+    font-size: 12px;
+    color: black;
+}
+
+.today-bottom{
+    border-bottom: 2px solid rgb(0, 192, 192);  
+}
+
+.book-list{
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.book-list img{
+    width: 35px;
+    height: 50px;
+    margin: 2px 0px;
+}
+
+.award-details{
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.award-details p{
+   font-size: 15px;
+}
+
+.award-details span{
+   font-size: 10px;
+   color: rgb(59, 59, 59);
+}
+    </Style>
+</head>
+<body>
+    
+
+    <div class="fair-container">
+
+        <div class="book-fair-image">
+            <img src="images/sliders/book fair award.svg" alt="">
+        </div>
+    
+                     <!-- book fair box 1 -->
+
+        <div class="award-box-container">
+            <div class="award-box">
+                <h2>Digital Marketing</h2>
+
+                <div class="middle-box">
+                      <a class="type-button" href="">Book</a>
+                      <a class="type-button right-type-bttn" href="">Writter</a>
+
+                        <div class="selector-bg">
+                           <select name="" id="all-in-books">
+                            <option value="All Fiction Books" class="all-option">All Fiction Books</option>
+                           </select>
+                           <a class="today-button today-bottom" href="">TODAY</a>
+                           <a class="today-button" href="">ALL</a>
+                        </div>
+                        <div class="award-details">
+                     <div class="book-list">
+                         <img src="images/books/fair1.jpg" alt=""><br>
+                         <img src="images/books/fair2.jpg" alt=""><br>
+                         <img src="images/books/fair3.jpg" alt="">
+                     </div>
+                     <div class="book-list">
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন</span> </p>
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন </span> </p>
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন</span> </p>
+                    </div></div>
+                   <div class="fair-button">
+                    <a href="#" class="view-all-book">View All</a></p>
+                  </div>
+                </div>
+            </div>
+
+                     <!-- book fair box 1 -->
+
+        <div class="award-box-container">
+            <div class="award-box">
+                <h2>Digital Marketing</h2>
+
+                <div class="middle-box">
+                      <a class="type-button" href="">Book</a>
+                      <a class="type-button right-type-bttn" href="">Writter</a>
+
+                        <div class="selector-bg">
+                           <select name="" id="all-in-books">
+                            <option value="All Fiction Books" class="all-option">All Fiction Books</option>
+                           </select>
+                           <a class="today-button today-bottom" href="">TODAY</a>
+                           <a class="today-button" href="">ALL</a>
+                        </div>
+                        <div class="award-details">
+                     <div class="book-list">
+                         <img src="images/books/fair1.jpg" alt=""><br>
+                         <img src="images/books/fair2.jpg" alt=""><br>
+                         <img src="images/books/fair3.jpg" alt="">
+                     </div>
+                     <div class="book-list">
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন</span> </p>
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন </span> </p>
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন</span> </p>
+                    </div></div>
+                   <div class="fair-button">
+                    <a href="#" class="view-all-book">View All</a></p>
+                  </div>
+                </div>
+            </div>
+
+                     <!-- book fair box 3 -->
+
+                    <div class="award-box-container">
+            <div class="award-box">
+                <h2>Digital Marketing</h2>
+
+                <div class="middle-box">
+                      <a class="type-button" href="">Book</a>
+                      <a class="type-button right-type-bttn" href="">Writter</a>
+
+                        <div class="selector-bg">
+                           <select name="" id="all-in-books">
+                            <option value="All Fiction Books" class="all-option">All Fiction Books</option>
+                           </select>
+                           <a class="today-button today-bottom" href="">TODAY</a>
+                           <a class="today-button" href="">ALL</a>
+                        </div>
+                        <div class="award-details">
+                     <div class="book-list">
+                         <img src="images/books/fair1.jpg" alt=""><br>
+                         <img src="images/books/fair2.jpg" alt=""><br>
+                         <img src="images/books/fair3.jpg" alt="">
+                     </div>
+                     <div class="book-list">
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন</span> </p>
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন </span> </p>
+                         <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
+                            <span>মোঃ নূরুল্লাহ হোসাইন</span> </p>
+                    </div></div>
+                   <div class="fair-button">
+                    <a href="#" class="view-all-book">View All</a></p>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
