@@ -11,129 +11,159 @@
         body{
             margin: 0;
             padding: 0;
-            background-color: azure;
         }
-.award-box-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    .fair-container{
+    height: 450px;
+    width: 80%;
     }
 
-.award-box{
-    height: 400px;
-    width: 300px;
-    padding: 8px 8px;
-    background-color:rgb(0, 192, 192);  
-    border-radius: 2px;
-    text-align: center;
-    margin: 5px 10px;
-}
+    .award-box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .award-box{
+        height: 440px;
+        width: 300px;
+        padding: 8px 8px;
+        background-color:rgb(140, 205, 245);
+        border-radius: 2px;
+        text-align: center;
+        margin: 5px 10px;
+    }
+    
+    .award-box2{
+        background-color:rgb(249, 184, 120);
+    }
+    
+    .award-box img{
+        margin: 12px;
+    }
+    
+    #dhormio-book{
+        margin: 10px;
+    }
+    .type-button{
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 15px;
+        margin-top: 10px;
+        text-align: center;
+        color: rgb(0, 77, 77);
+        border-top: 2px solid rgb(140, 205, 245);
+        background-color: rgb(221, 242, 255); 
+    }
+    
+    .right-type-bttn{
+        border-top: none;
+        background-color: rgb(232, 255, 255);  
+    }
+    
+    .type-button2{
+        color: rgb(249, 184, 120);
+        border-top: 2px solid rgb(249, 184, 120);
+        background-color: rgb(255, 243, 232);
+    }
+    
+    .selector-bg{
+        width: 100%;
+        height: 60px;
+        background-color: rgb(233, 246, 255); 
+    }
+    
+    .selector-bg2{
+        background-color: rgb(255, 242, 231);
+    }
+    
+    .middle-box{
+        height: 375px;
+        width: 295px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 2px;
+        position: relative;
+    }
+    
+    .fair-button{
+        position: absolute;
+        bottom: 4%;
+        left: 35%;
+    }
+    
+    .view-all-book{
+        text-decoration: none;
+        padding: 6px 10px;
+        color: rgb(3, 151, 211);
+        font-size: 15px;
+        border: 1px solid rgb(3, 151, 211);
+        box-shadow: 0px 3px 6px -4px rgb(162, 162, 162);
+        border-radius: 2px;
+    }
+    
+    .view-all-book:hover{
+        color:white ;
+        transition: .4s;
+        background-color: rgb(3, 151, 211);
+        border-color: rgb(139, 196, 234);
+    }
+    
+    #all-in-books{
+        margin: 10px 0px 5px 0px;
+        width: 250px;
+        height: 22px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 2px;
+        cursor: pointer;
+    }
+    
+    .today-button{
+        text-decoration: none;
+        display: inline-block;
+        margin: 6px 10px 1px 0px;
+        font-size: 12px;
+        color: black;
+    }
+    
+    .today-bottom{
+        border-bottom: 2px solid rgb(0, 192, 192);  
+    }
+    
+    .book-list{
+        padding: 10px;
+        vertical-align: middle;
+    }
+    
+    .book-list img{
+        width: 35px;
+        height: 50px;
+        margin: 2px 0px;
+    }
+    
+    .award-details{
+        margin: 0px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .award-details p{
+       font-size: 15px;
+    }
+    
+    .award-details span{
+       font-size: 10px;
+       color: rgb(59, 59, 59);
+    }
 
-.award-box h2{
-    margin: 12px;
-}
-.type-button{
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 15px;
-    margin-top: 10px;
-    text-align: center;
-    color: rgb(0, 77, 77);
-    border-top: 2px solid rgb(0, 192, 192);  
-    background-color: rgb(210, 255, 255);  
-}
-
-.right-type-bttn{
-    border-top: none;
-    background-color: rgb(232, 255, 255);  
-}
-
-.selector-bg{
-    width: 100%;
-    height: 60px;
-    background-color: rgb(210, 255, 255); 
-}
-.middle-box{
-    height: 344px;
-    width: 290px;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 2px;
-    position: relative;
-}
-
-.fair-button{
-    position: absolute;
-    bottom: 2%;
-    left: 35%;
-}
-
-.view-all-book{
-    text-decoration: none;
-    padding: 6px 10px;
-    color: rgb(3, 151, 211);
-    font-size: 15px;
-    border: 1px solid rgb(3, 151, 211);
-    box-shadow: 0px 3px 6px -4px rgb(162, 162, 162);
-    border-radius: 2px;
-}
-
-.view-all-book:hover{
-    color:white ;
-    transition: .4s;
-    background-color: rgb(3, 151, 211);
-    border-color: rgb(139, 196, 234);
-}
-
-#all-in-books{
-    margin: 10px 0px 5px 0px;
-    width: 250px;
-    height: 22px;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 0px 2px;
-    cursor: pointer;
-}
-
-.today-button{
-    text-decoration: none;
-    display: inline-block;
-    margin: 6px 10px 1px 0px;
-    font-size: 12px;
-    color: black;
-}
-
-.today-bottom{
-    border-bottom: 2px solid rgb(0, 192, 192);  
-}
-
-.book-list{
-    padding: 10px;
-    vertical-align: middle;
-}
-
-.book-list img{
-    width: 35px;
-    height: 50px;
-    margin: 2px 0px;
-}
-
-.award-details{
-    margin: 0px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.award-details p{
-   font-size: 15px;
-}
-
-.award-details span{
-   font-size: 10px;
-   color: rgb(59, 59, 59);
-}
+    .fair-container{
+        width: 83%;
+        height: 500px;
+        margin: 0 auto;
+    }
     </Style>
 </head>
 <body>
@@ -144,12 +174,12 @@
         <div class="book-fair-image">
             <img src="images/sliders/book fair award.svg" alt="">
         </div>
-    
+        
                      <!-- book fair box 1 -->
 
         <div class="award-box-container">
             <div class="award-box">
-                <h2>Digital Marketing</h2>
+                <img src="images/icons/fiction-book-logo.png" alt="">
 
                 <div class="middle-box">
                       <a class="type-button" href="">Book</a>
@@ -182,17 +212,17 @@
                 </div>
             </div>
 
-                     <!-- book fair box 1 -->
+                     <!-- book fair box 2 -->
 
         <div class="award-box-container">
-            <div class="award-box">
-                <h2>Digital Marketing</h2>
+            <div class="award-box award-box2">
+                <img src="images/icons/non_fiction.png" alt="">
 
                 <div class="middle-box">
-                      <a class="type-button" href="">Book</a>
+                      <a class="type-button type-button2" href="">Book</a>
                       <a class="type-button right-type-bttn" href="">Writter</a>
 
-                        <div class="selector-bg">
+                        <div class="selector-bg selector-bg2">
                            <select name="" id="all-in-books">
                             <option value="All Fiction Books" class="all-option">All Fiction Books</option>
                            </select>
@@ -201,9 +231,9 @@
                         </div>
                         <div class="award-details">
                      <div class="book-list">
-                         <img src="images/books/fair1.jpg" alt=""><br>
-                         <img src="images/books/fair2.jpg" alt=""><br>
-                         <img src="images/books/fair3.jpg" alt="">
+                        <img src="images/books/fair1.jpg" alt=""><br>
+                        <img src="images/books/fair2.jpg" alt=""><br>
+                        <img src="images/books/fair3.jpg" alt="">
                      </div>
                      <div class="book-list">
                          <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
@@ -223,7 +253,7 @@
 
                     <div class="award-box-container">
             <div class="award-box">
-                <h2>Digital Marketing</h2>
+                <img id="dhormio-book" src="images/icons/dhormio.png" alt="">
 
                 <div class="middle-box">
                       <a class="type-button" href="">Book</a>
@@ -238,9 +268,9 @@
                         </div>
                         <div class="award-details">
                      <div class="book-list">
-                         <img src="images/books/fair1.jpg" alt=""><br>
-                         <img src="images/books/fair2.jpg" alt=""><br>
-                         <img src="images/books/fair3.jpg" alt="">
+                        <img src="images/books/fair1.jpg" alt=""><br>
+                        <img src="images/books/fair2.jpg" alt=""><br>
+                        <img src="images/books/fair3.jpg" alt="">
                      </div>
                      <div class="book-list">
                          <p>ফ্রিল্যান্সিং : হালাল ইনকামের খোঁজে
@@ -257,7 +287,9 @@
             </div>
 
         </div>
-    </div>
+     </div>
+</div>
+</div>
 
 
 </body>

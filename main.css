@@ -32,6 +32,7 @@ body{
     display: flex;
 }
 
+
     /*   Hearder  */
 
 .upper-container{
@@ -106,6 +107,8 @@ body{
 }
 
 
+    /* floating reffer button */
+
 .reffer-button{
   text-decoration: none;
   background-color: white;
@@ -134,7 +137,14 @@ body{
 
 
 
-/*     Book Fair Award Section     */
+/*   Book Fair Award Section     */
+
+
+.fair-container{
+    width: 83%;
+    height: 600px;
+    margin: 0 auto;
+}
 
 .book-fair-image img{
     display: block;
@@ -146,24 +156,149 @@ body{
     justify-content: center;
     align-items: center;
 }
+    
+    .award-box{
+        height: 480px;
+        width: 330px;
+        padding: 8px 8px;
+        background-color:rgb(140, 205, 245);
+        border-radius: 2px;
+        text-align: center;
+        margin: 5px 10px;
+    }
+    
+    .award-box2{
+        background-color:rgb(249, 184, 120);
+    }
+    
+    .award-box img{
+        margin: 12px;
+    }
+    
+    #dhormio-book{
+        margin: 10px;
+    }
+    .type-button{
+        text-decoration: none;
+        display: inline-block;
+        height: 40px;
+        width: 80px;
+        margin-top: 15px;
+        padding: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(0, 77, 77);
+        border-top: 2px solid rgb(0, 157, 255);
+        border-radius: 3px 3px 0px 0px;
+        background-color: rgb(221, 242, 255); 
+    }
+    
+    .right-type-bttn{
+        border-top: none;
+        background-color: rgb(232, 255, 255);  
+    }
+    
+    .type-button2{
+        color: rgb(249, 184, 120);
+        border-top: 2px solid rgb(249, 184, 120);
+        background-color: rgb(255, 243, 232);
+    }
+    
+    .selector-bg{
+        width: 100%;
+        height: 70px;
+        background-color: rgb(233, 246, 255); 
+    }
+    
+    .selector-bg2{
+        background-color: rgb(255, 242, 231);
+    }
+    
+    .middle-box{
+        height: 395px;
+        width: 300px;
+        background-color: white;
+        margin: 0 auto;
+        border-radius: 2px;
+        position: relative;
+    }
 
-.award-box{
-    height: 400px;
-    width: 300px;
-    padding: 8px 8px;
-    background-color:#004a61;
-    border-radius: 10px;
-    margin: 15px;
-    text-align: center;
-}
+    .fair-button{
+        position: absolute;
+        bottom: 15%;
+        left: 63%;
+    }
+    
+    .view-all-book{
+        text-decoration: none;
+        padding: 6px 10px;
+        color: rgb(3, 151, 211);
+        font-size: 15px;
+        border: 1px solid rgb(3, 151, 211);
+        box-shadow: 0px 3px 6px -4px rgb(162, 162, 162);
+        border-radius: 2px;
+    }
+    
+    .view-all-book:hover{
+        color:white ;
+        transition: .4s;
+        background-color: rgb(3, 151, 211);
+        border-color: rgb(139, 196, 234);
+    }
+    
+    #all-in-books{
+        margin: 15px 0px 5px 0px;
+        padding: 2px 5px;
+        width: 250px;
+        height: 22px;
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 1px;
+        cursor: pointer;
+    }
+    
+    .today-button{
+        text-decoration: none;
+        display: inline-block;
+        margin: 6px 10px 1px 0px;
+        font-size: 12px;
+        color: black;
+    }
+    
+    .today-bottom{
+        border-bottom: 2px solid rgb(0, 192, 192);  
+    }
+    
+    .book-list{
+        padding: 10px;
+        vertical-align: middle;
+    }
+    
+    .book-list img{
+        width: 35px;
+        height: 50px;
+        margin: 2px 0px;
+    }
+    
+    .award-details{
+        margin: 10px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .award-details p{
+       font-size: 15px;
+    }
+    
+    .award-details span{
+       font-size: 10px;
+       color: rgb(59, 59, 59);
+    }
 
-
-
-
-
-
-
-
+    /* Close- Book Fair Award */
 
 
 
@@ -217,8 +352,7 @@ body{
 
 
 
-
-/*         Category Button      */
+/*    Category Hover Button    */
 
 .button-container{
     width: 80%;
@@ -259,6 +393,10 @@ body{
      cursor: pointer;
 }
 
+
+
+    /* book product container */
+    
 .book-box, .product-box{
     padding: 10px 10px;
     width: 25%;
@@ -423,11 +561,12 @@ body{
 
 
 
-/*        Rokomari Products       */
+
+/*       Rokomari Products      */
 
 .product-cointainer{
     width: 83%;
-    height: 420px;
+    height: 450px;
     background-color: white;
     border-radius: 2px;
     box-shadow: 0px 4px 6px -3px rgb(156, 156, 156);
