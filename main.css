@@ -87,20 +87,42 @@ body{
     background-color: rgb(0, 204, 17);
     color: white;
     border: 1px solid rgb(0, 204, 17);
-
 }
 
 .slider-image img{
     width: 83%;
     display: block;
     margin: 20px auto;
-
 }
 
 .small-slider{
     border-radius: 5px;
 }
 
+
+.reffer-button{
+  text-decoration: none;
+  background-color: white;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  padding: 10px 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 0 0 10px 10px;
+  transform: translateX(-50%) rotate(-90deg);
+  color: black;
+}
+
+.reffer-button span{
+    font-size: 16px;
+    margin: 0 5px;
+    font-weight: bold;
+}
+
+.reffer-button:hover{
+    color:rgb(16, 145, 200);
+    transition: 0.5s;
+}
 
 .book-fair-image img{
     display: block;
@@ -204,12 +226,11 @@ body{
     height: 300px;
     text-align: center;
     border: 2px solid transparent;
-
+    position: relative;
 }
 
 .book-box:hover{
     border: 2px solid rgb(200, 200, 200);
-    opacity: 0.4;
     transition: 0.5s;
     cursor: pointer;
 }
@@ -239,6 +260,79 @@ body{
     background-color: rgb(3, 151, 211);
     border-color: rgb(139, 196, 234);
 }
+
+
+
+
+/*   Product Hover Overlay  */
+
+.overlay-effect{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.692);
+    box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.712);
+    display: none;
+    transition: all 0.4s;
+ }
+
+.floating-effect a, .view-details a{
+    text-decoration: none;
+}
+
+.add-to-cart{
+    width: 62%;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 12px 10px;
+    color: white;
+    background-color: rgb(254, 154, 0);
+    box-shadow: 0px 3px 6px -4px rgb(202, 202, 202);
+    display: none;
+    transition: 0.5s;
+}
+  
+.add-to-cart:hover{
+    background-color: rgb(253, 169, 42);
+    transition: 0.5s;
+}
+
+.view-button{
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background: rgb(0, 149, 248);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.view-button:hover{
+    background: rgb(54, 170, 247);
+}
+
+.book-box:hover .overlay-effect, .book-box:hover .add-to-cart, .book-box:hover .view-button
+  {
+    display: block;
+  }
+
+
+/*   Product Hover Overlay   */
+
+
+
 
 .book-name{
     font-size: 15px;
