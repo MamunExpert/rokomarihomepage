@@ -74,6 +74,7 @@ body{
     width: 40px;
     height: 35px;
     margin-right: 10px;
+    cursor: pointer;
 }
 .upper-row .sign-in{
     width: 80px;
@@ -280,6 +281,7 @@ body{
         width: 35px;
         height: 50px;
         margin: 2px 0px;
+        cursor: pointer;
     }
     
     .award-details{
@@ -454,10 +456,9 @@ body{
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(255, 255, 255, 0.692);
+    background: rgba(255, 255, 255, 0.829);
     box-shadow: inset 0px 0px 10px 0px rgba(255, 255, 255, 0.712);
     display: none;
-    transition: all 0.4s;
 }
 
 .floating-effect a, .view-details a, 
@@ -579,3 +580,96 @@ body{
 }
 
 /*       Close- Rokomari Products       */
+
+
+
+
+    /* Weekly TOp Authors */
+
+.author-container, .subscribe-box{
+    width: 83%;
+    height: 300px;
+    background-color: white;
+    border-radius: 2px;
+    box-shadow: 0px 4px 6px -3px rgb(156, 156, 156);
+    margin: 20px auto 30px auto;
+}
+
+.author-box{
+    padding: 5px 10px;
+    width: 25%;
+    height: 220px;
+    text-align: center;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.author_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.author-image img{
+    height: 120px;
+    width: 120px;
+    cursor: pointer;
+}
+
+.author_name{
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+.subscribe-box{
+    height: 160px;
+    text-align: center;
+    position: relative;
+}
+
+.sub-title{
+    font-size: 25px;
+    padding: 20px;
+}
+
+#sub-email-field{
+    height: 2.6rem;
+    width: 43rem;
+    outline: none;
+    border: 1px solid rgb(185, 185, 185);
+    border-bottom: 1px solid rgb(185, 185, 185);
+    border-radius: 3px;
+    margin-left: 80px;
+    padding: 5px 15px;
+    position: absolute;
+    left: 8%;
+}
+
+#sub-email-field:focus{
+    border-bottom: 2px solid orange;
+    transition: 0.2s;
+}
+
+#sub-bttn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(0, 132, 255);
+    background-color: rgb(244, 250, 255);
+    font-weight: bold;
+    border: 1px solid rgb(0, 132, 255);
+    border-radius: 5px;
+    padding: 7px 13px;
+    transition: 0.3s;
+    position: absolute;
+    right: 14%;
+}
+
+#sub-bttn:hover{
+    color:white;
+    background-color: rgb(0, 132, 255);
+}
