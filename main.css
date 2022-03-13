@@ -9,7 +9,7 @@
 
 body{
     font-family: 'Noto Serif Bengali', serif;
-    background-color: rgb(240, 239, 239);
+    background-color: rgb(240, 240, 240);
 }
 
 .top-slider{
@@ -32,7 +32,18 @@ body{
     display: flex;
 }
 
+.search_btn{
+    height: 42px;
+    width: 50px;
+    background-color: #0397d3;
+    border-radius: 0 3px 3px 0;
+}
 
+.upper-row #search_bttn{
+    padding-top: 10px;
+    height: 32px;
+    width: 50px;
+}
     /*   Hearder  */
 
 .upper-container{
@@ -60,7 +71,7 @@ body{
     outline: none;
     border: 1px solid rgb(211, 211, 211);
     border-bottom: 2px solid orange;
-    border-radius: 3px;
+    border-radius: 3px 0 0 3px ;
     margin-left: 80px;
     padding: 5px 15px;
 }
@@ -672,4 +683,164 @@ body{
 #sub-bttn:hover{
     color:white;
     background-color: rgb(0, 132, 255);
+}
+
+.bottom-container{
+    width: 83%;
+    height: 40px;
+    margin: 20px auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-box img{
+    height: 34px;
+    width: 34px;
+    margin: 0 10px;
+}
+
+.bottom-box{
+    display: flex;
+}
+
+.bottom-box .text-tiltle{
+    font-size: 15px;
+    word-spacing: 1px;
+}
+
+.bottom-box .text-decription{
+    color: rgb(63, 63, 63);
+    font-size: 14px;
+    word-spacing: 1px;
+}
+
+
+
+
+footer{
+   color: rgb(51, 51, 51);
+}
+
+.footer-container{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+}
+
+.footer-top{
+    width: 83%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.developer-logo img{
+    padding: 10px 0;
+}
+
+.contact-us img {
+    margin-right: 8px;
+}
+
+.contact-us{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-us a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+}
+
+.contact-us span{
+    margin-right: 10px;
+}
+
+.social-media{
+    display: flex;
+}
+
+.social-media img{
+    width: auto;
+    height: 22px;
+    width: auto;
+    margin-right: 4px;
+}
+
+.quick-link-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.quick-links, .quick-links ul{
+    padding: 0px 20px;
+    list-style-type: circle;
+}
+
+.quick-links li a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    font-size: 12px;
+}
+
+
+.link-container{
+    width: 50%;
+}
+
+.download_icon{
+    display: flex;
+}
+
+.download_bttn img{
+    width: 125px;
+    vertical-align: middle;
+}
+
+.rokomari-download{
+    display: flex;
+}
+
+.rokomari-download h3{
+    padding-left: 10px;
+    padding-top: 15px;
+    font-size: 120%;
+}
+
+.footer-right img{
+    margin: 10px 0;
+}
+
+
+
+
+
+.pay-method{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;}
+
+.pay-method img{
+    margin: 0px 5px 5px 10px;
+    max-height: 32px;
+    max-width: 60px;
+}
+
+.rokomari-desclaimer{
+    text-align: center;
+    line-height: 25px;
+    padding: 15px 15px 0px 15px;
+}
+
+.rokomari-copyright{
+    text-align: center;
+    padding: 15px 0px;
+    background-color: rgb(240, 240, 240);
+    font-size: 14px;
 }
