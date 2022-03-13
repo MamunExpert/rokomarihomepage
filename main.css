@@ -44,6 +44,9 @@ body{
     height: 32px;
     width: 50px;
 }
+
+
+
     /*   Hearder  */
 
 .upper-container{
@@ -117,6 +120,159 @@ body{
 .small-slider{
     border-radius: 5px;
 }
+
+
+    /* main navbar section */
+
+.header-container{
+    background-color: white;
+}
+
+.main-navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.nav-row1{
+    width:83%;
+}
+
+.nav-row1 ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(11, 186, 255);
+}
+
+.nav-row1 ul li a, 
+.nav-row2 ul li a, 
+.nav-row3 ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px 0px 10px;
+}
+
+.spacial-item{
+    border: 1px solid  rgb(11, 186, 255);
+    border-bottom: 2px solid  hsl(0, 0%, 92%);
+}
+
+.nav-row1 ul li a:hover, 
+.nav-row2 ul li a:hover, 
+.nav-row3 ul li a:hover{
+    color: rgb(11, 186, 255);
+}
+
+.nav-row1 ul li a:hover{
+    border: 1px solid rgb(11, 186, 255);
+    border-bottom: 2px solid  hsl(0, 0%, 92%);
+    transition: .2s;
+}
+
+#spacial-offer:hover{
+    color: rgb(206, 71, 87);
+}
+.nav-row2{
+    width: 83%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.chevron-down{
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.nav-row2 ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.writter-colume ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-drop-down, .mega-drop-down3{
+    background-color: white;
+    width: 650px;
+    height: 300px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 220px;
+    left: 10%;
+    box-shadow: 0 6px 12px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+.writter-colume:hover .mega-drop-down{
+    cursor: pointer;
+    visibility: visible;
+}
+
+.mega-drop-down2{
+    background-color: white;
+    width: 900px;
+    height: 300px;
+    padding: 5px 10px;
+    position: absolute;
+    top: 220px;
+    left: 10%;
+    box-shadow: 0 6px 12px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    visibility: hidden;
+}
+
+.all-subject  ul{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mega-drop-down3{
+    width: 800px;
+    height: 300px;
+    padding: 10px;
+}
+
+.item-size ul li{
+    font-size: 15px;
+}
+
+.see-more{
+    font-size: 15px;
+    color: #01b3ff;
+    cursor: pointer;
+}
+
+.publisher-list ul{
+    font-size: 15x;
+    display: flex;
+    flex-direction: column;
+}
+
+.all-subject:hover .mega-drop-down2,
+.publisher-list:hover .mega-drop-down3
+{
+    cursor: pointer;
+    visibility: visible;
+}
+
+    /* Close- main navbar section */
+
+
 
 
     /* floating reffer button */
